@@ -36,7 +36,7 @@ elif candidato2 > candidato1 and candidato2 > candidato3:
 elif candidato3 > candidato2 and candidato3 > candidato1:
     print("Candidato3 GANHOU!")
 else:
-    ("EMPATE!") 
+    ("EMPATE!")     
 
 ##b), c) e d)
 
