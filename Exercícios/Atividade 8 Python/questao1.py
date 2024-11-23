@@ -1,0 +1,1 @@
+#Implementar um programa que calcule e escreva o somatório dos valores armazenados em uma lista unidimensional chamada numeros de 100 elementos numéricos a serem lidos via teclado.

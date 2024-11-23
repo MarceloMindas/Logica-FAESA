@@ -5,7 +5,7 @@ aluno = []
 #exemplo1
 alunos = ['paulo', 'maria', 'mario', 'ana', 'jose']
 
-#exemplo2
+#exemplo2 - adiciona um elemento no final da lista
 aluno.append('paulo')
 aluno.append('maria')
 aluno.append('mario')
@@ -41,7 +41,7 @@ alunos.pop()
 print(alunos)
 
 #ou
-#de1 = também apaga um elemento pela posição na lista
+#del = também apaga um elemento pela posição na lista
 #se colocar assim "del aluno" exclui a lista inteira
 
 #remove = exclui valores ou objeto da lista usando valor
