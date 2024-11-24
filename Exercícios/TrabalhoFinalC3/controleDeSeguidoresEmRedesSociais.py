@@ -44,3 +44,5 @@ for i in range(len(usuarios)):
         linha.append(seguidores)
     matriz.append(linha)  # Adiciona a linha à matriz
 print("\nMatriz inicial criada com sucesso!")'''
+
+

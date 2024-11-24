@@ -32,7 +32,8 @@ while True:
     print("2. Alterar Dados")
     print("3. Pesquisar Dados")
     print("4. Cadastrar Usuario")
-    print("5. Sair")
+    print("5. Excluir Usuario")
+    print("6. Sair")
     opcao = int(input("Escolha uma opção: "))
 
     if opcao == 1:  # Exibir dados
@@ -106,7 +107,18 @@ while True:
             matriz.append(novaLinha)  # Adiciona a nova linha de seguidores à matriz
             print("Usuário cadastrado com sucesso!")
 
-    elif opcao == 5:  # Sair
+    elif opcao == 5:
+        excluirUsuario = str(input("Digite a usuário que deseja excluir: ")).capitalize()
+        if excluirUsuario in usuarios:
+            indice = usuarios.index(excluirUsuario)
+            usuarios.pop(indice)
+            matriz.pop(indice)
+            print("Usuário ", excluirUsuario, "excluido com sucesso!")
+        else:
+            print("Usuário não encontrado!")
+            
+
+    elif opcao == 6:  # Sair
         print("Encerrando o programa. Até logo!")
         break
 
