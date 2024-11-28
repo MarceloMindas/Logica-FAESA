@@ -1,19 +1,18 @@
-# Cadastro de influenciadores
+integrantes = ['Marcelo', 'Vanderson', 'Estevão']
+print(integrantes)
 usuarios = []
 
-for i in range(2):
+for i in range(5):
     usuario = str(input("Digite os influenciadores: ")).capitalize()
     usuarios.append(usuario)
 print(usuarios)
 
-# Cadastro de redes sociais
 redes = [] 
-for j in range(2):
+for i in range(5):
     rede = str(input("Digite as redes sociais selecionadas: ")).capitalize()
     redes.append(rede)
 print(redes)
 
-# Matriz para armazenar o número de seguidores (2 usuários x 2 redes sociais)
 matriz = []
 for i in range(len(usuarios)):
     linha = []
@@ -23,7 +22,6 @@ for i in range(len(usuarios)):
         linha.append(seguidores)
     matriz.append(linha)
 
-# Menu inicial
 print("=== Gerenciamento de Seguidores ===")
 print("Grupo:", ', '.join(usuarios))
 
