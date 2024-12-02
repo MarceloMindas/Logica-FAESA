@@ -1,14 +1,16 @@
 integrantes = ['Marcelo', 'Vanderson', 'Estevão']
+
 print(integrantes)
+
 usuarios = []
 
-for i in range(5):
+for i in range(2):
     usuario = str(input("Digite os influenciadores: ")).capitalize()
     usuarios.append(usuario)
 print(usuarios)
 
 redes = [] 
-for i in range(5):
+for i in range(2):
     rede = str(input("Digite as redes sociais selecionadas: ")).capitalize()
     redes.append(rede)
 print(redes)
@@ -18,8 +20,13 @@ for i in range(len(usuarios)):
     linha = []
     print("Usuário:", usuarios[i])  # Exibe o nome do usuário
     for j in range(len(redes)):
-        seguidores = int(input("Digite os seguidores de " + usuarios[i] +  " em " + redes[j] + ": "))
-        linha.append(seguidores)
+         while True:  # Loop para garantir que o valor digitado é um número
+            try:
+                seguidores = int(input(f"Digite os seguidores de {usuarios[i]} em {redes[j]}: "))
+                linha.append(seguidores)
+                break 
+            except ValueError:  # Se o valor não for um número inteiro
+                print("Digite um número inteiro válido!")
     matriz.append(linha)
 
 print("=== Gerenciamento de Seguidores ===")
@@ -69,8 +76,8 @@ while True:
 
     elif opcao == 3:  # Pesquisar dados
         print("\n=== Pesquisar Dados ===")
-        print("1. Pesquisar por usuário")
-        print("2. Pesquisar por rede social")
+        print("Pesquisar por usuário [1]: ")
+        print("Pesquisar por rede social [2]: ")
         pesquisa_opcao = int(input("Escolha uma opção: "))
         if pesquisa_opcao == 1:
             usuario = input("Digite o nome do usuário: ").capitalize()
